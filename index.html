@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单计算器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="header">
+            <div class="settings">
+                <button class="settings-button">☰</button>
+                <div class="settings-dropdown">
+                    <h3>设置</h3>
+                    <div class="setting-item">
+                        <label>界面颜色</label>
+                        <select id="theme-color">
+                            <option value="#4a6fa5">默认蓝</option>
+                            <option value="#28a745">绿色</option>
+                            <option value="#dc3545">红色</option>
+                            <option value="#ffc107">黄色</option>
+                        </select>
+                    </div>
+                    <div class="setting-item">
+                        <label>按钮大小</label>
+                        <select id="button-size">
+                            <option value="small">小</option>
+                            <option value="medium" selected>中</option>
+                            <option value="large">大</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="title-container">
+                <h1>简单计算器</h1>
+                <div class="subtitle">马弓手王牛牛</div>
+            </div>
+            <div class="dog-image">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=brown%20dog%20sleeping%20on%20the%20ground%20with%20a%20chain%20around%20its%20neck&image_size=square" alt="狗">
+            </div>
+        </div>
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="input" readonly>
+                <div id="error" class="error"></div>
+            </div>
+            <div class="buttons">
+                <button class="function">del</button>
+                <button class="function">sin</button>
+                <button class="function">cos</button>
+                <button class="clear">C</button>
+                <button class="function">tan</button>
+                <button class="function">^2</button>
+                <button class="function">√</button>
+                <button class="operator">/</button>
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="operator">*</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="operator">-</button>
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="operator">+</button>
+                <button class="function">π</button>
+                <button class="number">0</button>
+                <button class="number">.</button>
+                <button class="equals">=</button>
+            </div>
+        </div>
+        <div class="history">
+            <h2>计算记录</h2>
+            <div id="history-list"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
